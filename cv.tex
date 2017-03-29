@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Yiran Cao
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Yiran (Aurora) Cao} & Email : \href{mailto:cao.805@osu.edu}{cao.805@osu.edu}\\
+   & Mobile : +1-614-446-7207 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Ohio State University}{Columbus, OH}
+      {Master of Science in Computer Science and Engineering;  GPA: 3.625}{Aug. 2016 -- Present}
+      \resumeItemListStart
+       \resumeItem{Courses Taken: }
+          {Advanced Algorithms(A), Operating Systems(A)}
+       \resumeItem{Courses Taking: }
+          {Machine Learning, Data Mining, Data Visualization, Foundations of Programming Language}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Renmin University of China}{Beijing, China}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.45}{Sept. 2012 -- Jun. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Linear Models and SGD on Brain Image Data}{}
+      {Machine Learning Project}{Mar 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Analyzed 3D brain images to predict whether a person is looking at a picture or a sentence.  \href{https://github.com/wanderlustyc/linear-model}{\underline{source code}}}
+        \resumeItem{}
+          {Implemented SVM in python, using stochastic gradient descent for hinge loss and logistic loss}
+        \resumeItem{}{Obtained an accuracy of 85.29\% on test set}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {k-NN Classifier Implementation and Application}{}
+      {Data Mining Project}{Feb 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Implemented a k-NN classifier in R to predict people’s income. \href{https://github.com/wanderlustyc/k-NN}{\underline{source code}}}
+        \resumeItem{}
+          {Used dataset with 52 mixed types of attributes.}
+        \resumeItem{}
+          {Obtained an accuracy of 87.9\%, better than the off-the-shelf $kknn$ classifier in R.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lisp Interpreter}{}
+      {Programming Language Project}{Feb 2017 - Mar 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Implemented a Lisp interpreter in Java. \href{https://github.com/wanderlustyc/LISP-Interpreter}{\underline{source code}} }
+        \resumeItem{}
+          {Implemented the input, evaluation and output stage of Lisp on top of a recursive descent parser.}
+        \resumeItem{}
+          {Support user-defined function evaluation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {A Critic and Redesign of Visualizations in \textit{A Network Framework of Cultural History}}{}
+      {Data Visualization}{Mar 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {\textit{A Network Framework of Cultural History} is an interesting paper published on \textit{Science}.}
+        \resumeItem{}
+          {Criticized data visualizations in the paper from the perspective of graphical semiology.}
+        \resumeItem{}
+          {Redesigned some of the visualizations using D3.js. \href{https://github.com/wanderlustyc/DVRedesign}{\underline{source code}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Quora Question Pairs Challenge}{}
+      {Kaggle Competition}{In Progress}
+      \resumeItemListStart
+        \resumeItem{}
+          {To predict whether a provided pair of questions contain two questions with the same meaning. }
+        \resumeItem{}
+          {Exploring NLP techniques to apply to this problem.}
+      \resumeItemListEnd
+
+    
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EMPLOYMENTS-----------------
+\section{Employments}
+
+
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Qunar.com}{Beijing, China}
+  {Data Analyst Intern}{Apr 15 - Aug 15}
+    \resumeItemListStart
+      \resumeItem{}
+        {Analyzed data of hotel transactions, to access sales performance and to help make appropriate policies.}
+      \resumeItem{}
+        {Extracted raw data in Hive with SQL.}
+      \resumeItem{}
+        {Analyzed and visualized data with R, and wrote weekly and monthly data analysis report.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, C, Python, Javascript}
+   }
+   \item{
+    \textbf{Data Analysis}{: R, D3.js}
+   }
+   \item{
+     \textbf{Web}{: Bootstrap, jQuery, Node JS}
+   }
+   \item{
+    \textbf{Operating Systems}{: Linux, Windows, Mac OSX}
+   }
+   \item{
+    \textbf{Databases}{: MySQL, PostgreSQL}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
